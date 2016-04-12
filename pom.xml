@@ -18,6 +18,7 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 
 		<version.org.hibernate.orm>5.0.8.Final</version.org.hibernate.orm>
+		<version.elasticsearch>2.3.1</version.elasticsearch>
 		<slf4jVersion>1.6.4</slf4jVersion>
 	</properties>
 
@@ -27,6 +28,16 @@
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${version.org.hibernate.orm}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.elasticsearch</groupId>
+			<artifactId>elasticsearch</artifactId>
+			<version>${version.elasticsearch}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.7.1</version>
 		</dependency>
 
 		<!-- Test -->
