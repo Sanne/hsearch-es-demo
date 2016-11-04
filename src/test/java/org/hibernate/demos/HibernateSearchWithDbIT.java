@@ -46,7 +46,7 @@ public class HibernateSearchWithDbIT extends TestBase {
 	private static void setUpEsClient() {
 		mapper = new ObjectMapper();
 		client = TransportClient.builder().build()
-				.addTransportAddress(new InetSocketTransportAddress(new InetSocketAddress("192.168.99.100", 9300)));
+				.addTransportAddress(new InetSocketTransportAddress(new InetSocketAddress("127.0.0.1", 9300)));
 	}
 
 	public static void setUpTestData() {
